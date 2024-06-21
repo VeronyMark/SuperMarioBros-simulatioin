@@ -55,7 +55,7 @@ public class Spustac extends JDialog {
         this.zapniHruButton = new JButton();
         this.ukonciHruButton = new JButton();
         this.najlepsiHracButton = new JButton();
-        this.najlepsiHracButton.setText("najvyššie skore");
+        this.najlepsiHracButton.setText("najvyssie skore");
         this.najlepsiHracButton.setFont(new Font("Helvetica", Font.ITALIC, 16));
         this.najlepsiHracButton.setSize(200, 50);
         this.najlepsiHracButton.setLocation(400, 500);
