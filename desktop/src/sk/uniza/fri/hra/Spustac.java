@@ -41,7 +41,7 @@ public class Spustac extends JDialog {
         this.okno = new JFrame("HRA");
         this.okno.setLayout(new BorderLayout());
 
-        ImageIcon pozadie = new ImageIcon(("assets\\marioPozadie.jpg"));
+        ImageIcon pozadie = new ImageIcon(("assets\\super-mario-background.jpg"));
         ImageIcon ikona = new ImageIcon(("assets\\srdce.png"));
 
         Image ikonaObrazok = ikona.getImage();
@@ -55,18 +55,18 @@ public class Spustac extends JDialog {
         this.zapniHruButton = new JButton();
         this.ukonciHruButton = new JButton();
         this.najlepsiHracButton = new JButton();
-        this.najlepsiHracButton.setText("najvyssie skore");
+        this.najlepsiHracButton.setText("highest score");
         this.najlepsiHracButton.setFont(new Font("Helvetica", Font.ITALIC, 16));
         this.najlepsiHracButton.setSize(200, 50);
         this.najlepsiHracButton.setLocation(400, 500);
         this.najlepsiHracButton.setBackground(Color.lightGray);
 
 
-        this.zapniHruButton.setText("HRAJ");
+        this.zapniHruButton.setText("PLAY");
         this.zapniHruButton.setFont(new Font("Helvetica", Font.ITALIC, 16));
         this.zapniHruButton.setBackground(Color.lightGray);
 
-        this.ukonciHruButton.setText("UKONCI");
+        this.ukonciHruButton.setText("END");
         this.ukonciHruButton.setFont(new Font("Helvetica", Font.ITALIC, 16));
         this.ukonciHruButton.setBackground(Color.lightGray);
 
@@ -79,14 +79,14 @@ public class Spustac extends JDialog {
         this.menoTextField.setVisible(false);
 
         this.odosliButton = new JButton();
-        this.odosliButton.setText("pošli");
+        this.odosliButton.setText("send");
         this.odosliButton.setFont(new Font("Helvetica", Font.ITALIC, 16));
         this.odosliButton.setSize(150, 50);
         this.odosliButton.setLocation(300, 400);
         this.odosliButton.setBackground(Color.lightGray);
         this.odosliButton.setVisible(false);
 
-        this.infoOMene = new JLabel("MENO");
+        this.infoOMene = new JLabel("NAME");
         this.infoOMene.setFont(new Font("Helvetica", Font.ITALIC, 30));
         this.infoOMene.setSize(500, 500);
         this.infoOMene.setLocation(100, 0);
@@ -140,7 +140,7 @@ public class Spustac extends JDialog {
                         Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
                         config.setForegroundFPS(60);
                         config.setWindowIcon("srdce.png");
-                        config.setTitle("HRA");
+                        config.setTitle("GAME");
                         config.setResizable(false);
                         config.setWindowedMode(1200, 800);
                         Hra hra = new Hra();
